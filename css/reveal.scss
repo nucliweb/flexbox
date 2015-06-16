@@ -1332,7 +1332,7 @@ body {
             padding: 10px;
             margin: 5px;
 
-                
+
                 &.align-items-1 {
                     padding-bottom: 50px;
                 }
@@ -1340,9 +1340,9 @@ body {
                 &.align-items-2 {
                     padding-bottom: 150px;
                     padding-top: 50px;
-                    
+
                 }
-             
+
                  &.align-items-2.baseline::before {
                     content: "";
                     position: absolute;
@@ -1361,25 +1361,25 @@ body {
                 &.align-items-4 {
                     padding-bottom: 120px;
                 }
-             
+
                 &.align-content-4 {
                     padding:  0 20px;
                 }
-             
+
                 &.align-content-6 {
                     padding:  0 50px;
                 }
-                
+
                 &.align-content-9 {
                     padding:  0 70px;
                 }
-        }   
+        }
     }
     .flexcontainer {
         @include flexbox;
-        
+
         @include flex-wrap;
-        
+
         position: relative;
 
 
@@ -1395,237 +1395,237 @@ body {
         &.sample-2 {
             div { flex: 1 0 auto; }
         }
-        
+
         &.sample-3 {
-            
+
             @include flex-direction;
-            
+
             div { flex: 1 0 auto; }
         }
-        
+
         &.sample-4 {
             //row | row-reverse | column | column-reverse
             @include flex-direction(row-reverse);
-            
+
             div { flex: 1 0 auto; }
         }
-        
+
         &.sample-5 {
             //row | row-reverse | column | column-reverse
             @include flex-direction(column);
-            
+
             div { flex: 1 0 auto; }
         }
-        
+
         &.sample-6 {
             //row | row-reverse | column | column-reverse
             @include flex-direction(column-reverse);
-            
+
             div { flex: 1 0 auto; }
         }
-        
+
         &.sample-7 {
             //nowrap | wrap | wrap-reverse
             @include flex-wrap(nowrap);
-            
+
             div { flex: 1 0 auto; }
         }
-        
+
         &.sample-8 {
             //nowrap | wrap | wrap-reverse
             @include flex-wrap(wrap);
-            
+
             div { flex: 0 0 auto; }
         }
-        
+
         &.sample-9 {
             //nowrap | wrap | wrap-reverse
             @include flex-wrap(wrap-reverse);
-            
+
             div { flex: 0 0 auto; }
         }
-        
+
         &.sample-10 {
             // flex-start | flex-end | center | space-between | space-around
             @include justify-content;
-            
+
             div { flex: 0 0 auto; }
         }
-        
+
         &.sample-11 {
             // flex-start | flex-end | center | space-between | space-around
             @include justify-content(flex-end);
-            
+
             div { flex: 0 0 auto; }
         }
-        
+
         &.sample-12 {
             // flex-start | flex-end | center | space-between | space-around
             @include justify-content(center);
-            
+
             div { flex: 0 0 auto; }
         }
-        
+
         &.sample-13 {
             // flex-start | flex-end | center | space-between | space-around
             @include justify-content(space-between);
-            
+
             div { flex: 0 0 auto; }
         }
-        
+
         &.sample-14 {
             // flex-start | flex-end | center | space-between | space-around
             @include justify-content(space-around);
-            
+
             div { flex: 0 0 auto; }
         }
-        
+
         &.sample-15 {
             // auto | flex-start | flex-end | center | baseline | stretch
             @include align-items(flex-start);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-16 {
             // auto | flex-start | flex-end | center | baseline | stretch
             @include align-items(flex-end);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-17 {
             // auto | flex-start | flex-end | center | baseline | stretch
             @include align-items(center);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-18 {
             // auto | flex-start | flex-end | center | baseline | stretch
             @include align-items(baseline);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-19 {
             // auto | flex-start | flex-end | center | baseline | stretch
             @include align-items(stretch);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-20 {
             // flex-start | flex-end | center | space-between | space-around | stretch
             align-content: stretch;
             @include flex-wrap(wrap);
             @include align-items(flex-start);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-21 {
             // flex-start | flex-end | center | space-between | space-around | stretch
             align-content: flex-start;
             @include flex-wrap(wrap);
             @include align-items(flex-start);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-22 {
             // flex-start | flex-end | center | space-between | space-around | stretch
             align-content: flex-end;
             @include flex-wrap(wrap);
             @include align-items(flex-start);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-23 {
             // flex-start | flex-end | center | space-between | space-around | stretch
             align-content: center;
             @include flex-wrap(wrap);
             @include align-items(flex-start);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-24 {
             // flex-start | flex-end | center | space-between | space-around | stretch
             align-content: space-between;
             @include flex-wrap(wrap);
             @include align-items(flex-start);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-25 {
             // flex-start | flex-end | center | space-between | space-around | stretch
             align-content: space-around;
             @include flex-wrap(wrap);
             @include align-items(flex-start);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-26 {
             // flex-start | flex-end | center | space-between | space-around | stretch
             align-content: stretch;
             @include flex-wrap(wrap);
             @include align-items(stretch);
-            height: 300px;
-            div { 
+            height: 280px;
+            div {
                 flex: 1 0 auto;
             }
         }
-        
+
         &.sample-27 {
-            div { 
+            div {
                 flex: 0 0 auto;
-                
+
                 &:nth-child(2) {
                     order: -1;
                 }
             }
         }
-        
+
         &.sample-28 {
-            div { 
+            div {
                 flex: 0 0 auto;
-                
+
                 &:nth-child(2) {
                     @include flex-grow(2);
                 }
             }
         }
-        
+
         &.sample-29 {
-            div { 
+            div {
                 flex: 0 0 auto;
-                
+
                 &:nth-child(2) {
                     @include flex-grow(2);
                 }
@@ -1634,12 +1634,12 @@ body {
                 }
             }
         }
-        
+
         &.sample-30 {
-            
-            div { 
+
+            div {
                 flex: 1 0 30%;
-                
+
                 &:nth-child(2) {
                     @include flex-shrink(2);
                 }
@@ -1648,24 +1648,37 @@ body {
                 }
             }
         }
-        
+
         &.sample-31 {
             @include flex-wrap(wrap);
-            div { 
+            div {
                 flex: 1 0 15%;
-                
+
                 &:nth-child(2) {
                     flex-basis: 50%;
                 }
             }
-            
+
+        }
+
+		&.sample-32 {
+            // auto | flex-start | flex-end | center | baseline | stretch
+            @include align-items(flex-start);
+            height: 180px;
+            div {
+                flex: 1 0 auto;
+
+				&:nth-child(3) {
+                    align-self: flex-end;
+                }
+            }
         }
 
     }
-    
+
     .flexcontainer-inline {
         @include inline-flex;
-        
+
 
         background-color: #fff;
         border: 1px solid #353535;

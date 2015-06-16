@@ -35,12 +35,12 @@
 		<div class="reveal">
 
 			<div class="slides">
-				<section>
+				<section data-background="#fefefe">
 					<h1>Flexbox</h1>
 					<h3>Desarrollo de aplicaciones web flexibles</h3>
 				</section>
 
-				<section style="text-align: right">
+				<section data-background="#96e4ae" style="text-align: right">
 					<img src="assets/JoanLeon.jpg" alt="Joan Leon">
 					<h3>Joan Leon</h3>
 					<div>Frontend Developer at <a href="http://www.schibsted.es/" target="_blank">Schibsted Spain</a></div>
@@ -48,7 +48,7 @@
 					<div><a href="http://github.com/nucliweb" target="_blank">GitHub</a></div>
 				</section>
 
-				<section>
+				<section data-background="#e3aeae">
 					<section>
 						<img src="assets/layout.svg" alt="Layout" style="border: none;box-shadow: none; -webkit-transform: scale(1.25);transform: scale(1.25);">
 					</section>
@@ -76,7 +76,7 @@
 					        <figcaption style="font-size: 18px; -webkit-transform: translateY(20px);transform: translateY(20px);">
 					            <a href="http://caniuse.com/#search=flex" target="_blank">Can I Use</a>
 					        </figcaption>
-					        
+
 					    </figure>
 					</section>
 					<section>
@@ -105,10 +105,10 @@
 					    </ul>
 					</section>
 				</section>
-                <section>
+                <section data-background="#aee3e0">
                     <img src="assets/flex-direction-terms.svg" style="border: none;box-shadow: none; -webkit-transform: scale(1.5);transform: scale(1.5);">
                 </section>
-				<section>
+				<section data-background="#dfae83">
                     <section>
                         <h2 class="lowercase">Properties for the Parent</h2>
                         <p>(flex container)</p>
@@ -132,7 +132,7 @@
 <div class="flexcontainer sample-1">
     <div>Item</div>
     ...
-</div>                       
+</div>
     					</code></pre>
                         <div class="flexcontainer flexbox sample-1">
                             <div>Item</div>
@@ -156,7 +156,7 @@
 <div class="flexcontainer sample-2">
     <div>Item</div>
     ...
-</div>                       
+</div>
     					</code></pre>
                         <div class="flexcontainer flexbox sample-2">
                             <div>Item</div>
@@ -180,7 +180,7 @@
 <div class="flexcontainer-inline">
     <div>Item</div>
     ...
-</div>                       
+</div>
     					</code></pre>
                         <div class="flexcontainer-inline flexbox">
                             <div>Item</div>
@@ -206,7 +206,7 @@
 <div class="flexcontainer sample-3">
     <div>Item</div>
     ...
-</div>                       
+</div>
     					</code></pre>
                         <div class="flexcontainer flexbox sample-3">
                             <div>Item 1</div>
@@ -232,7 +232,7 @@
 <div class="flexcontainer sample-4">
     <div>Item</div>
     ...
-</div>                       
+</div>
     					</code></pre>
                         <div class="flexcontainer flexbox sample-4">
                             <div>Item 1</div>
@@ -447,7 +447,7 @@
                     <section>
                         <h2 class="lowercase">alinear elementos en el eje transversal </h2>
                         <img src="assets/flexbox-align-items.jpg" style="border: none;box-shadow: none; -webkit-transform: scale(1.25);transform: scale(1.25);">
-                    </section>                   
+                    </section>
                     <section>
 				        <h2 class="lowercase">align-items</h2>
 					    <pre><code data-trim>
@@ -554,7 +554,7 @@
 .flexcontainer {
     display: flex;
     align-content: stretch;
-    /* flex-start | flex-end | center | space-between | 
+    /* flex-start | flex-end | center | space-between |
     space-around | stretch */
 }
 
@@ -579,8 +579,9 @@
 					    <pre><code data-trim>
 .flexcontainer {
     display: flex;
+	align-items: flex-start;
     align-content: flex-start;
-    /* flex-start | flex-end | center | space-between | 
+    /* flex-start | flex-end | center | space-between |
     space-around | stretch */
 }
 
@@ -605,8 +606,9 @@
 					    <pre><code data-trim>
 .flexcontainer {
     display: flex;
+	align-items: flex-start;
     align-content: flex-end;
-    /* flex-start | flex-end | center | space-between | 
+    /* flex-start | flex-end | center | space-between |
     space-around | stretch */
 }
 
@@ -631,8 +633,9 @@
 					    <pre><code data-trim>
 .flexcontainer {
     display: flex;
+	align-items: flex-start;
     align-content: center;
-    /* flex-start | flex-end | center | space-between | 
+    /* flex-start | flex-end | center | space-between |
     space-around | stretch */
 }
 
@@ -657,8 +660,9 @@
 					    <pre><code data-trim>
 .flexcontainer {
     display: flex;
+	align-items: flex-start;
     align-content: space-between;
-    /* flex-start | flex-end | center | space-between | 
+    /* flex-start | flex-end | center | space-between |
     space-around | stretch */
 }
 
@@ -683,8 +687,9 @@
 					    <pre><code data-trim>
 .flexcontainer {
     display: flex;
+	align-items: flex-start;
     align-content: space-around;
-    /* flex-start | flex-end | center | space-between | 
+    /* flex-start | flex-end | center | space-between |
     space-around | stretch */
 }
 
@@ -709,8 +714,9 @@
 					    <pre><code data-trim>
 .flexcontainer {
     display: flex;
+	align-items: stretch;
     align-content: stretch;
-    /* flex-start | flex-end | center | space-between | 
+    /* flex-start | flex-end | center | space-between |
     space-around | stretch */
 }
 
@@ -731,7 +737,7 @@
                         </div>
 				    </section>
 				</section>
-				<section>
+				<section data-background="#bcc0eb">
 				    <section>
                         <h2 class="lowercase">Properties for the Children</h2>
                         <p>(flex items)</p>
@@ -746,7 +752,7 @@
 .flexcontainer div {
    flex: 0 0 auto;
 }
-                       
+
 .flexcontainer div:nth-child(2) {
    order: -1;
 }
@@ -768,7 +774,7 @@
 .flexcontainer div {
    flex: 0 0 auto;
 }
-                       
+
 .flexcontainer div:nth-child(2) {
    flex-grow: 2; /* default 0 */
 }
@@ -790,7 +796,7 @@
 .flexcontainer div {
    flex: 0 0 auto;
 }
-                       
+
 .flexcontainer div:nth-child(2) {
    flex-grow: 2;
 }
@@ -816,7 +822,7 @@
 .flexcontainer div {
    flex: 1 0 30%;
 }
-                       
+
 .flexcontainer div:nth-child(2) {
    flex-shrink: 2;
 }
@@ -866,8 +872,32 @@
                             <a href="http://chriswrightdesign.com/experiments/flexbox-adventures/" target="_blank">Flexbox adventures</a>
                         </div>
 				    </section>
+                    <section>
+				        <h2 class="lowercase">align-self</h2>
+					    <pre><code data-trim>
+.flexcontainer {
+    display: flex;
+	align-items: flex-start;
+}
+
+.flexcontainer div {
+   flex: 0 0 auto;
+}
+
+.flexcontainer div:nth-child(3) {
+   align-self: flex-end;
+   /* auto | flex-start | flex-end | center | baseline | stretch */
+}
+    					</code></pre>
+                        <div class="flexcontainer flexbox sample-32">
+                            <div>Item 1</div>
+                            <div>Item 2</div>
+                            <div>Item 3</div>
+                            <div>Item 4</div>
+                        </div>
+				    </section>
 				</section>
-				<section>
+				<section data-background="#e8ebbc">
                     <section>
                         <h2 class="lowercase">layouts</h2>
                         <img src="assets/layout.png" alt="Layout" style="border: none;box-shadow: none;">
@@ -882,7 +912,7 @@
                         </ul>
                     </section>
 				</section>
-				<section>
+				<section data-background="#d6c1d8">
 				    <h2 class="lowercase">recursos</h2>
 				    <ul>
 				        <li><a href="http://www.w3.org/TR/css3-flexbox/" target="_blank">W3C</a></li>
@@ -891,13 +921,13 @@
 				        <li><a href="http://cssflexbox.com/" target="_blank">CSS Flexbox</a></li>
 				    </ul>
 				</section>
-				<section>
+				<section data-background="#96e4ae">
 				    <h2 class="lowercase">Gracias</h2>
 				    <p style="margin-top: 150px;">Joan Leon</p>
 				    <p><a href="https://twitter.com/nucliweb" target="_blank">@nucliweb</a></p>
 				</section>
 
-				
+
 
 			</div>
 
