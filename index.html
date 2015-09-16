@@ -131,7 +131,8 @@
 
 <div class="flexcontainer sample-1">
     <div>Item</div>
-    ...
+    <div>Item</div>
+    <div>Item</div>
 </div>
     					</code></pre>
                         <div class="flexcontainer flexbox sample-1">
@@ -578,15 +579,15 @@
 				        <h2 class="lowercase">align-content</h2>
 					    <pre><code data-trim>
 .flexcontainer {
-    display: flex;
+	display: flex;
 	align-items: flex-start;
-    align-content: flex-start;
-    /* flex-start | flex-end | center | space-between |
-    space-around | stretch */
+	align-content: flex-start;
+	/* flex-start | flex-end | center | space-between |
+	space-around | stretch */
 }
 
 .flexcontainer div {
-   flex: 0 0 auto;
+	flex: 0 0 auto;
 }
     					</code></pre>
                         <div class="flexcontainer flexbox sample-21">
@@ -602,18 +603,19 @@
                         </div>
 				    </section>
 				    <section>
-				        <h2 class="lowercase">align-content</h2>
-					    <pre><code data-trim>
+				      <h2 class="lowercase">align-content</h2>
+
+							<pre><code data-trim>
 .flexcontainer {
-    display: flex;
+	display: flex;
 	align-items: flex-start;
-    align-content: flex-end;
-    /* flex-start | flex-end | center | space-between |
-    space-around | stretch */
+	align-content: flex-end;
+	/* flex-start | flex-end | center | space-between |
+	space-around | stretch */
 }
 
 .flexcontainer div {
-   flex: 0 0 auto;
+	flex: 0 0 auto;
 }
     					</code></pre>
                         <div class="flexcontainer flexbox sample-22">
@@ -632,15 +634,15 @@
 				        <h2 class="lowercase">align-content</h2>
 					    <pre><code data-trim>
 .flexcontainer {
-    display: flex;
+	display: flex;
 	align-items: flex-start;
-    align-content: center;
-    /* flex-start | flex-end | center | space-between |
-    space-around | stretch */
+	align-content: center;
+	/* flex-start | flex-end | center | space-between |
+	space-around | stretch */
 }
 
 .flexcontainer div {
-   flex: 0 0 auto;
+	flex: 0 0 auto;
 }
     					</code></pre>
                         <div class="flexcontainer flexbox sample-23">
@@ -659,15 +661,15 @@
 				        <h2 class="lowercase">align-content</h2>
 					    <pre><code data-trim>
 .flexcontainer {
-    display: flex;
+	display: flex;
 	align-items: flex-start;
-    align-content: space-between;
-    /* flex-start | flex-end | center | space-between |
-    space-around | stretch */
+	align-content: space-between;
+	/* flex-start | flex-end | center | space-between |
+	space-around | stretch */
 }
 
 .flexcontainer div {
-   flex: 0 0 auto;
+	flex: 0 0 auto;
 }
     					</code></pre>
                         <div class="flexcontainer flexbox sample-24">
@@ -861,18 +863,27 @@
                             <div>Item 4</div>
                         </div>
 				    </section>
-				    <section>
-				        <h2 class="lowercase">Calculando el espacio disponible</h2>
-                        <div style="font-size: 0.75em">
-                            <p><strong>Available space</strong> = (container size - flex-basis siblings total)</p>
-                            <p><strong>Grow unit</strong> = (Available space / Sum Grow siblings total)</p>
-                            <p><strong>Flex item size</strong> = (Flex basis + (Grow Unit * num))</p>
-                        </div>
-                        <div style="font-size: 0.6em; margin-top: 50px">
-                            <a href="http://chriswrightdesign.com/experiments/flexbox-adventures/" target="_blank">Flexbox adventures</a>
-                        </div>
+
+						<section>
+				        <h2 class="lowercase">flex</h2>
+					    <pre><code data-trim>
+
+.item {
+
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+
+}
+
+    					</code></pre>
+                        <p style="font-size: 18px;">
+                            This is the shorthand for flex-grow, flex-shrink
+														& flex-basis combined. The second and third
+														parameters (flex-shrink and flex-basis) are optional.
+														<strong>Default is 0 1 auto.</strong>
+                        </p>
 				    </section>
-                    <section>
+
+            <section>
 				        <h2 class="lowercase">align-self</h2>
 					    <pre><code data-trim>
 .flexcontainer {
@@ -897,6 +908,19 @@
                         </div>
 				    </section>
 				</section>
+				<section data-background="#bc5955">
+					<section>
+							<h2 class="lowercase">Calculando el espacio disponible</h2>
+											<div style="font-size: 0.75em">
+													<p><strong>Available space</strong> = (container size - flex-basis siblings total)</p>
+													<p><strong>Grow unit</strong> = (Available space / Sum Grow siblings total)</p>
+													<p><strong>Flex item size</strong> = (Flex basis + (Grow Unit * num))</p>
+											</div>
+											<div style="font-size: 0.6em; margin-top: 50px">
+													<a href="http://chriswrightdesign.com/experiments/flexbox-adventures/" target="_blank">Flexbox adventures</a>
+											</div>
+					</section>
+				</section>
 				<section data-background="#e8ebbc">
                     <section>
                         <h2 class="lowercase">layouts</h2>
@@ -919,6 +943,9 @@
 				        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes" target="_blank">Using CSS flexible boxes</a></li>
 				        <li><a href="http://zomigi.com/blog/flexbox-syntax-for-ie-10/" target="_blank">Flexbox syntax for IE 10</a></li>
 				        <li><a href="http://cssflexbox.com/" target="_blank">CSS Flexbox</a></li>
+				        <li><a href="http://bennettfeely.com/flexplorer/" target="_blank">Flexplorer</a></li>
+				        <li><a href="http://the-echoplex.net/flexyboxes/" target="_blank">Flexyboxes</a></li>
+				        <li><a href="http://flexboxin5.com/" target="_blank">flexbox in 5 minutes</a></li>
 				    </ul>
 				</section>
 				<section data-background="#96e4ae">
@@ -926,9 +953,6 @@
 				    <p style="margin-top: 150px;">Joan Leon</p>
 				    <p><a href="https://twitter.com/nucliweb" target="_blank">@nucliweb</a></p>
 				</section>
-
-
-
 			</div>
 
 		</div>
